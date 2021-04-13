@@ -1,0 +1,11 @@
+
+<ul>
+  <li>
+    <h3> Mean: {{numbers.mean}}</h3>
+  </li>
+  <li>
+    <h3> Standard Deviation: {{numbers.sd}}  </h3>
+  </li>
+</ul><hr>
+
+<app-winner *ngIf="numbers.mean > 90"></app-winner>

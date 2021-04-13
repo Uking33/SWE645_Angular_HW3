@@ -1,0 +1,19 @@
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Change Your Name</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <label> What is your name?
+      <input [(ngModel)]="newName">
+    </label>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('save')">Save</button>
+  </div>
+</ng-template>
+
+<h3 class="user-name">Hello, {{name}}!</h3><a href="#" id="not-me" (click)="open(content)">Not Me</a>
+

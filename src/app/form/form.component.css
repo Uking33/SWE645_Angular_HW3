@@ -1,0 +1,146 @@
+/*
+    Authors: Abdullah Alaqeel & Sarah Binsalman
+
+ */
+:root {
+  /* to define the gmu colors */
+  --gmu-green: #006633;
+  --gmu-gold: #FFCC33;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+p {
+  color: #4e4e4f;
+}
+
+/* the links within the paragraphs */
+p a {
+  color: var(--gmu-green);
+  transition: color 0.2s linear;
+  border-bottom: 1px dotted var(--gmu-green);
+  text-decoration: none;
+}
+
+/* the hover over the links */
+p a:hover {
+  color: var(--gmu-gold);
+  transition: color 0.2s linear;
+  border-bottom: 1px dotted var(--gmu-gold);
+  text-decoration: none;
+}
+
+.v-padding-s {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.v-padding-m {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.a-checkbox {
+  padding-right: 8px;
+  line-height: 2em;
+}
+
+.a-checkbox input {
+  margin-right: 4px;
+}
+
+.a-inline {
+  display: inline-block;
+  width: auto;
+}
+
+.a-required {
+  color: red;
+  font-size: 0.7em;
+  float: right;
+  top: 10px;
+}
+
+/* to set up the max width for the survey page */
+.a-main-container {
+  max-width: 500px;
+  margin: 0px auto;
+}
+
+h1 {
+  color: #006633;
+}
+
+.a-header {
+  border: 5px var(--gmu-green) solid;
+  text-align: center
+}
+
+li.w3-button {
+  text-align: left;
+  background: var(--gmu-gold)
+}
+
+li.w3-button:hover {
+  background-color: var(--gmu-gold) !important;
+  opacity: 70%;
+}
+
+.gmu-green {
+  background: var(--gmu-green);
+  color: white;
+}
+
+.gmu-p {
+  text-align: justify;
+}
+
+/* the dropcap */
+.gmu-p:first-of-type:first-letter {
+  float: left;
+  font-size: 45px;
+  line-height: 1;
+  font-weight: bold;
+  margin-right: 9px;
+}
+
+.course-info {
+  padding: 10px;
+}
+
+.a-error-input {
+  border-color: red !important;
+}
+
+.a-resolved-zip {
+  display: inline-block;
+  width: 50% !important;
+  margin-right: 10px;
+  transition: width 0.5s;
+}
+
+.city-state {
+  transition-delay: 0.5s;
+  transition: all 0.5s;
+}
+
+#notme {
+  float: right;
+}
+
+h3.user-name {
+  display: inline-block;
+}

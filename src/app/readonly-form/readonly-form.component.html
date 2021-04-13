@@ -1,0 +1,193 @@
+<!--&lt;!&ndash;Abdullah Alaqeel G00915482&ndash;&gt;-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Form Information</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<div class="a-main-container">
+
+<!--  &lt;!&ndash; The header (for accessibility) &ndash;&gt;-->
+  <nav>
+    <div class="w3-panel">
+      <h1>Survey Information </h1>
+
+    </div>
+
+  </nav>
+
+<!--   The main content (for accessibility) -->
+  <main>
+<!--    <form  class="w3-container"  >-->
+<div class ="w3-container">
+      <div class="w3-panel a-error w3-hide">
+        <h3>Your form has the following errors:</h3>
+        <ul class="form-errors">
+        </ul>
+      </div>
+      <div class="w3-row-padding w3-stretch">
+        <div class="w3-half">
+          <label>Student ID<span class="a-required">Required</span>
+             <p>{{student.studentId}}</p>
+          </label>
+
+        </div>
+      </div>
+      <hr/>
+      <div class="w3-row-padding w3-stretch">
+        <div class="w3-half">
+          <label>First Name<span class="a-required">Required</span>
+            <p>{{student.firstName}}</p>
+          </label>
+
+        </div>
+        <div class="w3-half">
+          <label>Last Name<span class="a-required">Required</span>
+            <p>{{student.lastName}}</p>
+          </label>
+
+        </div>
+      </div>
+      <div class="w3-row-padding w3-stretch v-padding-m">
+        <div class="w3-third">
+          <label>Phone<span class="a-required">Required</span>
+            <p>{{student.phone}}</p>
+          </label>
+
+        </div>
+
+        <div class="w3-twothird">
+          <label>Email<span class="a-required">Required</span>
+            <p>{{student.email}}</p>
+          </label>
+        </div>
+      </div>
+      <hr>
+      <div class="w3-row-padding w3-stretch v-padding-m">
+        <div class="w3-half">
+          <label>Website
+            <p>{{student.url}}</p>
+          </label>
+        </div>
+        <div class="w3-half">
+          <label>Date of Visit
+            <p>{{student.dateOfVisit}}</p>
+          </label>
+        </div>
+
+      </div>
+      <hr>
+
+      <div class="w3-row">
+        <div class="v-padding-s">
+          <label>Street Address
+            <p> {{student.streetAddress}}</p>
+          </label>
+        </div>
+        <div class="v-padding-s">
+          <label>Unit
+            <p> {{student.unit}}</p>
+          </label>
+        </div>
+        <div class="w3-row-padding w3-stretch">
+          <div class="w3-col m5 s12">
+            <label>City
+              <p> {{student.city}}</p>
+            </label>
+          </div>
+          <div class="w3-col m4 s6">
+            <label>State
+              <p> {{student.state}}</p>
+            </label>
+          </div>
+          <div class="w3-col m3 s6">
+            <label>Zip Code
+              <p> {{student.zipcode}}</p>
+            </label>
+          </div>
+
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="w3-row-padding w3-stretch">
+        <h3>When is your high school graduation date?</h3>
+        <div class="w3-col s6">
+          <label class="a-checkbox">Month <p>{{student.graduationMonth}}</p></label>
+
+        </div>
+
+        <div class="w3-col s6">
+          <label class="a-checkbox">Year<p> {{student.graduationYear}}</p></label>
+        </div>
+      </div>
+
+      <hr>
+
+
+      <div class="w3-row">
+        <h3>What did you like about your visit? <span class="a-required">Required</span></h3>
+            <p>{{student.liked}}</p>
+
+      </div>
+      <hr>
+
+      <div class="w3-row">
+        <h3>How did you become interested in the university? <span class="a-required">Required</span></h3>
+        <p> {{student.interest}}</p>
+
+      </div>
+      <hr>
+
+      <div class="w3-row">
+        <h3>How likely are you to recommend George Mason to other students?</h3>
+        <div class="v-padding-s">
+          <label>
+            <p> {{student.likelihood}}</p>
+          </label>
+        </div>
+
+      </div>
+
+      <hr>
+      <div class="w3-row" id="avg-max-container">
+        <h3>Mean &amp; SD Computation</h3>
+         <div class="v-padding-s">
+          <label>Data:
+            <p> {{student.data}}</p>
+          </label>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="w3-row">
+        <h3>Do you have any additional comments?</h3>
+        <div class="v-padding-s">
+          <p> {{student.comments}} </p>
+        </div>
+      </div>
+<!--    </form>-->
+    </div>
+  </main>
+</div>
+
+</body>
+
+</html>
+
+<!--<p> read only works</p>-->
+<!--<p>{{student.studentId}}</p>-->
