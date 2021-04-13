@@ -6,6 +6,7 @@ pipeline {
 		script {
 		    checkout scm
 		    sh 'echo ${BUILD_TIMESTAMP}'
+		    sh 'docker image prune'
 		    withCredentials([usernamePassword(credentialsId: 'docker-pass', passwordVariable: 'password', usernameVariable: 'username')]){
 		    	sh "cd  | docker login -u ${username} -p ${password}"
 		    }
