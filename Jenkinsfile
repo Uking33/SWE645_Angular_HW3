@@ -7,10 +7,6 @@ pipeline {
 		    checkout scm
 		    sh 'echo ${BUILD_TIMESTAMP}'
 		    withCredentials([usernamePassword(credentialsId: 'docker-pass', passwordVariable: 'password', usernameVariable: 'username')]){
-			sh "cd  | docker login -u ${username} -p ${password}"
-		    }
-		    sh "docker build -t liyuqin33/angular645:${BUILD_TIMESTAMP} ."
-		    withCredentials([usernamePassword(credentialsId: 'docker-pass', passwordVariable: 'password', usernameVariable: 'username')]){
 		    	sh "cd  | docker login -u ${username} -p ${password}"
 		    }
 		    sh "docker build -t liyuqin33/angular645:${BUILD_TIMESTAMP} ."
