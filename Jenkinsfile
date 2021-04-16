@@ -21,5 +21,10 @@ pipeline {
 		}
 	    }
 	}
+        stage('Deloying to Rancher as single od') {
+            steps {
+                sh 'kubectl set image deployment/student-survey student-survey=liyuqin33/studentsurvey645:${BUILD_TIMESTAMP} -n swe645-hw3'
+            }
+        }
     }
 }
